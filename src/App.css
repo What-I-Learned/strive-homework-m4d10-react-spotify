@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: rgb(184, 24, 24);
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0, #121212 100%); */
   color: white;
+  background-color: rgb(184, 24, 24);
+}
+.top-section-title-secondary {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.04rem;
+  line-height: 36px;
 }
 
-.App-link {
-  color: #61dafb;
+.other-card {
+  padding: 16px;
+  background-color: rgba(24, 24, 24, 0.76);
+  color: white;
+  border-radius: 4px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  max-width: 18rem;
+  box-shadow: 0px 5px 10px rgba(12, 12, 12, 0.425);
+  transition: all 0.3s;
+}
+.other-card:hover {
+  background-color: rgba(32, 32, 32, 0.616);
+}
+.other-card-img {
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.other-card-img > img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-position: 50% 50%;
+}
+.card {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-title {
+  font-size: 11px;
+  margin: 0px;
+  padding-bottom: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.album-card-text {
+  font-size: 12px;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.other-card-body {
+  min-height: 62px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.other-card-title {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.other-card-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(179, 179, 179);
+}
+.card:hover::before {
+  content: "";
+  background-color: rgb(255, 255, 255, 0.15);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.album-presentation-bottom {
+  display: flex;
 }
