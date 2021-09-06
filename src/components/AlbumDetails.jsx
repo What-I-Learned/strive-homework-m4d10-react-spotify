@@ -39,18 +39,18 @@ const AlbumDetails = ({ match }) => {
       {selectedAlbum && (
         <section className="album-presentation">
           <Row className="album-presentation-top">
-            <Col xs={6}>
+            <Col xs={12} md={2}>
               <div className="album-img">
                 <img src={selectedAlbum.cover_medium} alt="" />
               </div>
             </Col>
-            <Col xs={6}>
+            <Col xs={12} md={4}>
               <div className="album-info">
                 <h2>{selectedAlbum.type}</h2>
                 <h1>{selectedAlbum.title}</h1>
                 <Row className="album-stats">
                   <Col xs={4}>{selectedAlbum.fans}</Col>
-                  <Col xs={4}>{selectedAlbum.duration}</Col>
+                  <Col xs={4}>{selectedAlbum.duration / 60}</Col>
                   <Col xs={4}>{selectedAlbum.nb_tracks}</Col>
                 </Row>
               </div>

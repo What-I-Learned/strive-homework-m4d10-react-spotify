@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home";
 import AlbumDetails from "./components/AlbumDetails";
-// import Navigation from './components/Navigation'
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
     <div className="App">
       <Router>
         {/* navigation */}
-        {/* <Navigation /> */}
+        <Sidebar />
         <Route
           path="/"
           exact

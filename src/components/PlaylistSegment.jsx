@@ -50,7 +50,7 @@ class PlaylistSegment extends React.Component {
         </Row>
         <Row>
           {this.state.playlist.map((data) => (
-            <Col md={3} lg={1} xs={6} key={data.id} className="mb-4">
+            <Col md={3} lg={2} xs={6} key={data.id} className="mb-4 song-col">
               <div className="other-card">
                 <div className="other-card-img">
                   <img src={data.album.cover_medium} alt="..." />
